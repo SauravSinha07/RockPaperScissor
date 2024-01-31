@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Delius+Unicase:wght@700&family=Inter:wght@300;700&family=Roboto+Condensed&family=Whisper&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -26,13 +26,13 @@
         </div>
         <div class="hands">
             <div class="paper">
-                <img id="paper" src="Paper.png" alt="paper" width="150px" height="150px" onclick="pickUserHand('paper')">
+                <img id="paper" src="./images/Paper.png" alt="paper" width="150px" height="150px" onclick="pickUserHand('paper')">
             </div>
             <div class="scissors">
-                <img id ="hand" src="Scissors.png" alt="scissors" width="150px" height="150px" onclick="pickUserHand('scissors')">
+                <img id ="hand" src="./images/Scissors.png" alt="scissors" width="150px" height="150px" onclick="pickUserHand('scissors')">
             </div>
             <div class="rock">
-                <img id="stone" src="Rock.png" alt="rock" width="150px" height="150px" onclick="pickUserHand('rock')">
+                <img id="stone" src="./images/Rock.png" alt="rock" width="150px" height="150px" onclick="pickUserHand('rock')">
             </div>
         </div>
         <div class="contest">
@@ -41,7 +41,7 @@
                     <p>YOU PICKED</p>
                 </div>
                 <div class="handimagecontainer">
-                    <img id="userpickimage" src="Paper.png" alt="" width="150px" height="150px">
+                    <img id="userpickimage" src="./images/Paper.png" alt="" width="150px" height="150px">
                 </div>
                 
             </div>
@@ -58,7 +58,7 @@
                     <p>PC PICKED</p>
                 </div>
                 <div class="handimagecontainer">
-                    <img id="comppickimage" src="Scissors.png" alt="" width="150px" height="150px">
+                    <img id="comppickimage" src="./images/Scissors.png" alt="" width="150px" height="150px">
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
                     <p>Game Rules</p>
                 </div>
                 <div class="closebtn">
-                    <img src="X.png" alt="close">
+                    <img src="./images/X.png" alt="close">
                 </div>
                 <div class="rulecontent">
                     <ul>
@@ -93,6 +93,6 @@
             <a href="./celebration.html" class="rulebutton" id="nextbutton" style="display:none;">NEXT</a>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
