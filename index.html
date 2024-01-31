@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Ppaer Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Delius+Unicase:wght@700&family=Inter:wght@300;700&family=Roboto+Condensed&family=Whisper&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="scorecard">
+            <div class="title">
+                <p>ROCK<br>PAPER<br>SCISSORS</p>
+            </div>
+            <div class="usrscore">
+                <p>YOUR<br>SCORE</p>
+                <p  class="userscorecount">0</p>
+            </div>
+            <div class="comscore">
+                <p>COMPUTER<br>SCORE</p>
+                <p class="compscorecount">0</p>
+            </div>
+        </div>
+        <div class="hands">
+            <div class="paper">
+                <img id="paper" src="Paper.png" alt="paper" width="150px" height="150px" onclick="pickUserHand('paper')">
+            </div>
+            <div class="scissors">
+                <img id ="hand" src="scissors.png" alt="scissors" width="150px" height="150px" onclick="pickUserHand('scissors')">
+            </div>
+            <div class="rock">
+                <img id="stone" src="Rock.png" alt="rock" width="150px" height="150px" onclick="pickUserHand('rock')">
+            </div>
+        </div>
+        <div class="contest">
+            <div class="userhand">
+                <div calss="head">
+                    <p>YOU PICKED</p>
+                </div>
+                <div class="handimagecontainer">
+                    <img id="userpickimage" src="Paper.png" alt="" width="150px" height="150px">
+                </div>
+                
+            </div>
+            <div class="reffree">
+                <div class='decision'></div>
+                    <div class="win"><p>YOU WIN<p></p></div>
+                    <div class='against'><p>AGAINST PC</p></div>
+                    <div class="newgame" onclick="restartGame()">
+                        <p>PLAY AGAIN</p>
+                    </div>
+                </div>
+            <div class="comphand">
+                <div calss="head">
+                    <p>PC PICKED</p>
+                </div>
+                <div class="handimagecontainer">
+                    <img id="comppickimage" src="Scissors.png" alt="" width="150px" height="150px">
+                </div>
+            </div>
+        </div>
+        <div class="rulewrapper">
+            <div class="rulebox" onclick="hideRuleBox()">
+                <div class="rulehead">
+                    <p>Game Rules</p>
+                </div>
+                <div class="closebtn">
+                    <img src="X.png" alt="close">
+                </div>
+                <div class="rulecontent">
+                    <ul>
+                        <li class="listitem">
+                            Rock beats scissors, scissors beat paper, and paper beats rock.
+                        </li>
+                        <li class="listitem">
+                            Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”
+                        </li>
+                        <li class="listitem">
+                            Use rock, paper, scissors to settle minor decisions or simply play to pass the time
+                        </li>
+                        <li class="listitem">
+                            If both players lay down the same hand, each player lays down another hand
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="rulebutton" onclick="showRule()">RULES</button>
+            <a href="/celebration.html" class="rulebutton" id="nextbutton" style="display:none;">NEXT</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
